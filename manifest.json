@@ -1,7 +1,12 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "icons": [
+    "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+"icons": [
     {
       "src": "favicon.ico",
       "sizes": "192x192",
@@ -12,4 +17,17 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
-}
+}, 
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "prestart": "npm install -g serve",
+    "local": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+
+
